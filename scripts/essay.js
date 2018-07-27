@@ -171,7 +171,7 @@ H5P.Essay = function ($, Question) {
   Essay.prototype.getInput = function () {
     return this.inputField
       .getText()
-      .replace(/(\r\n|\r|\n)/g, ' ')
+      .replace(/(\r\n|\r|\n)/g, '<br />')
       .replace(/\s\s/g, ' ');
   };
 
